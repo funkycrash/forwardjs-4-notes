@@ -20,7 +20,7 @@ function getGenres() {
 }
 ```
 
-then check if `isValid()`
+then check if `isValid()` 
 then use jQuery to manipulate the DOM
 
 ##### Flux
@@ -52,7 +52,7 @@ Tools:
 * Remote (Free)
 * BrowserStack
 
-
+#### Using CSS Prefixes
 
 
 
