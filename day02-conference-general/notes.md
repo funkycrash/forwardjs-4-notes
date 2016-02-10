@@ -41,5 +41,7 @@ Deffered effort jQuery but hard to maintain (great for prototyping)
 Flux+React: Simpler system more maintainable
 Elm: Simplest system, most maintanable
 
-#### More resources
-ELM in action
+## Building Web Sites that Work Everywhere
+Speaker: Dr Doris Chen
+
+#### Cross Browser Testing
