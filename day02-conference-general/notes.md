@@ -76,7 +76,7 @@ Service Oriented Architecture is a design pattern that works really well for nod
 
 
 ## Session05: Future of the Immersive web
-Speakers:
+Speakers: 
 * Brandon Jones, Google 
 * Tony Parisi, WeVR
 * Gavan Wilhite, Altspace VR
@@ -85,8 +85,14 @@ Speakers:
 * Gavan Wichita
 
 #### Why VR ? Why should we take it seriously
+1. Electronics (to do VR) are really cheap now.
+2. As developpers we understand this way better than several years ago
+3. API and frameworks are out there
 
-
+#### Uses cases
+* Education is a really good use case
+* Medecine 
+* 
 
 
 
