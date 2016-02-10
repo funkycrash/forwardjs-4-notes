@@ -92,7 +92,14 @@ Speakers:
 #### Uses cases
 * Education is a really good use case
 * Medecine 
-* 
+* Simple experiences
+
+#### How to do VR?
+* Attend meetups (almost every day in the week)
+* Non of the current browser have support for webVR now. But you can get new [browsers](http://webvr.info/)
+
+
+
 
 
 
