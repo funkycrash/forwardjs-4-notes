@@ -1,13 +1,13 @@
 # Day 02 general
 
-## SVG and GreenSock for Complex Animation
+## Session01 SVG and GreenSock for Complex Animation
 Speaker: Sarah Drasner [website](http://sarahdrasnerdesign.com/)
 
 #### Additional resources
 * [https://css-tricks.com/productive-in-react/]
 
 
-## From jQuery to Flux to Elm
+## Session02 From jQuery to Flux to Elm
 Speaker: Richard feldman [github](https://github.com/rtfeldman)
 #### Validating inputs
 
@@ -41,7 +41,25 @@ Deffered effort jQuery but hard to maintain (great for prototyping)
 Flux+React: Simpler system more maintainable
 Elm: Simplest system, most maintanable
 
-## Building Web Sites that Work Everywhere
+## Session03 Building Web Sites that Work Everywhere
 Speaker: Dr Doris Chen
 
 #### Cross Browser Testing
+Tools:
+* Site Scan (Free)
+* Browser Screenshots (Free)
+* Windows virtual machines (Free)
+* Remote (Free)
+* BrowserStack
+
+
+
+
+
+
+
+
+
+
+
+
