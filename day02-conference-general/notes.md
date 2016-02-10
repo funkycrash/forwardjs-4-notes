@@ -8,7 +8,7 @@ Speaker: Sarah Drasner [website](http://sarahdrasnerdesign.com/)
 
 
 ## From jQuery to Flux to Elm
-
+Speaker: Richard feldman [github](https://github.com/rtfeldman)
 #### Validating inputs
 
 ##### jQuery 
@@ -34,3 +34,12 @@ State is stored in the model
 `model.genre` 
 lookup then check if `isValid()`
 Elm returns the desired view of the DOM with `view()`
+
+
+#### Insights
+Deffered effort jQuery but hard to maintain (great for prototyping)
+Flux+React: Simpler system more maintainable
+Elm: Simplest system, most maintanable
+
+#### More resources
+ELM in action
