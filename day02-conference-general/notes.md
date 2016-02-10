@@ -64,6 +64,9 @@ if (Modernizr.fontface) {
 }
 ```
 
+#### Polyfills and fallbacks
+mimics a standard API to avoir a rewrite
+
 
 
 
