@@ -144,9 +144,25 @@ MY_OBJECT = {"OTHER_KEY": "value"};
 MY_OBJECT.key = "otherValue";
 ```
 
-* Arrow Functions
+* Arrow Functions are interesting but it's mostly syntax sugar
+* Object Literal Extensions
 
+```JavaScript 
+var a = 103, bar = 'foo'
 
+var obj = {
+    a, //a:a, object shorthand
+    m(z) {return z + this.a},
+    [bar]: 104, // computed Property names
+    get getA() {return this.a}
+}
+```
+
+* String templating [more info](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
+* Set. Set objects are collections of values, you can iterate its elements in insertion order. A value in the Set may only occur once; it is unique 
+in the Set's collection.
+* Map. The Map object is a simple key/value map. Any value (both objects and primitive values) may be used as either a key or a value.
+* WeakSet 
 
 
 
