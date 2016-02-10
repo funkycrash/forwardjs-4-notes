@@ -162,7 +162,21 @@ var obj = {
 * Set. Set objects are collections of values, you can iterate its elements in insertion order. A value in the Set may only occur once; it is unique 
 in the Set's collection.
 * Map. The Map object is a simple key/value map. Any value (both objects and primitive values) may be used as either a key or a value.
-* WeakSet 
+* WeakSet. WeakSet objects are collections of objects. An object in the WeakSet may only occur once; it is unique in the WeakSet's collection.
+** The main differences to the Set object are:
+** In contrast to Sets, WeakSets are collections of objects only and not of arbitrary values of any type.
+The WeakSet is weak: References to objects in the collection are held weakly. If there is no other reference to an object stored in the WeakSet, they can be garbage collected. That also means that there is no list of current objects stored in the collection. WeakSets are not enumerable.
+* WeakMap
+** Keys of WeakMaps are of the type Object only. Primitive data types as keys are not allowed (e.g. a Symbol can't be a WeakMap key).
+** The key in a WeakMap is held weakly.  What this means is that, if there are no other strong references to the key, then the entire entry will be removed from the WeakMap by the garbage collector.
+* Symbol. Every Symbol is unique `Symbol("foo") === Symbol("foo"); // false` [good use of Symbol](http://blog.keithcirkel.co.uk/metaprogramming-in-es6-symbols/)
+
+#### What are my options?
+##### Client SPA 49+ gives 91% of ES6
+no module import/export
+
+
+
 
 
 
