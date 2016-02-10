@@ -68,6 +68,14 @@ if (Modernizr.fontface) {
 mimics a standard API to avoir a rewrite
 
 
+## Session04: Node, npm, and Service Oriented Architecture
+Service Oriented Architecture is a design pattern that works really well for node for several reasons
+* Easier debugging
+* Allowing smaller teams to take responsability on smaller systems.
+* Smaller teams are better teams
+
+
+
 
 
 
