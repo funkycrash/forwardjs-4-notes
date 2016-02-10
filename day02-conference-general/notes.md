@@ -190,6 +190,11 @@ https://github.com/duereg/forwardjs-2016-prezzo
 
 ## Session07: Shedding Some Lights on Javascript Playgrounds
 
+There are more than 10 great JS Playgrounds out there. Which one should we choose?
+* codepen
+* jsfiddle
+* plunker
+
 
 
 
