@@ -58,6 +58,12 @@ Tools:
 
 #### Feature Detection
 * Modernizr
+```
+if (Modernizr.fontface) {
+    //...dosomething
+}
+```
+
 
 
 
