@@ -82,9 +82,9 @@ Speakers:
 * Gavan Wilhite, Altspace VR
 * Diego Marcos, MozVR
 * Mike Blix, Samsung
+* Gavan Wichita
 
-
-
+#### Why VR ? Why should we take it seriously
 
 
 
