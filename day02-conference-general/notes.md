@@ -54,7 +54,10 @@ Tools:
 
 #### Using CSS Prefixes
 * Autoprefixer with Grunt
-* prefix-free
+* prefix-free tool
+
+#### Feature Detection
+
 
 
 
