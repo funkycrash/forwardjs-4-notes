@@ -64,8 +64,6 @@ if (Modernizr.fontface) {
 }
 ```
 
-#### Polyfills: Examples
-
 
 
 
