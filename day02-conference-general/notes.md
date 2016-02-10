@@ -75,6 +75,13 @@ Service Oriented Architecture is a design pattern that works really well for nod
 * Smaller teams are better teams
 
 
+## Session05: Future of the Immersive web
+Speakers:
+* Brandon Jones, Google 
+* Tony Parisi, WeVR
+* Gavan Wilhite, Altspace VR
+* Diego Marcos, MozVR
+* Mike Blix, Samsung
 
 
 
