@@ -60,7 +60,9 @@ setTimeout(function(){
 * I'm allowing that thunk to be a time-agnostic value. All the statement issues become more easy.
 
 #### Promises
-
+* A promise is a **future value**, very similar concept than the thunk
+* We can pass it around and reason about the promise in the same way we would have the value.
+* 
 
 
 
