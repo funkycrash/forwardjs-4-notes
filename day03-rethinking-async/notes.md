@@ -23,7 +23,7 @@ Speaker: Kyle Simpson [web](http://getify.me/)
 * When there is a time dependency (waiting for a result before next step), then coordination becomes very complex.
 
 
-#### First Pattern to coordinate concurrency: CALLBACKS
+#### Callbacks
 
 ```JavaScript
 setTimeout(function(){
@@ -38,6 +38,8 @@ setTimeout(function(){
 * We have callbacks because there is a **TIME DEPENDENCE**
 * Can lead to *Callback hell* when there are too many callbacks it becomes a mess.
 * **You have to manage the state of the callbacks over time**
+
+#### Inversion of Control
 
 
 
