@@ -40,7 +40,7 @@ setTimeout(function(){
 * **You have to manage the state of the callbacks over time**
 
 #### Inversion of Control
-
+* 
 
 
 
