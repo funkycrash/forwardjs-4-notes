@@ -70,6 +70,8 @@ setTimeout(function(){
     * immutable once resolved
 * Promises are mediator that operate in a way we can trust
 
+#### Flow control with promises
+
 
 
 
