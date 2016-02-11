@@ -71,7 +71,9 @@ setTimeout(function(){
 * Promises are mediator that operate in a way we can trust
 
 #### Flow control with promises
-* You call `.then` to chain the promises together and control the flow.
+* You call `.then()` to chain the promises together and control the flow.
+* You can anly pass 1 value to the promise.
+* If you need more values in one promise you need to pass them in an `Array` or `Object`
 
 
 
