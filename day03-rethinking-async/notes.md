@@ -40,7 +40,7 @@ setTimeout(function(){
 * **You have to manage the state of the callbacks over time**
 
 #### Inversion of Control
-* How do you check that people are calling your callbacks as you planned it
+* How do you check that people are calling your callbacks as you planned it?
     * not too early
     * not too late
     * not too  many times etc...
