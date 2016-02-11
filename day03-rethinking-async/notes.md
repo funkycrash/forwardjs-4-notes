@@ -71,7 +71,7 @@ setTimeout(function(){
 * Promises are mediator that operate in a way we can trust
 
 #### Flow control with promises
-
+* You call `.then` to chain the promises together and control the flow.
 
 
 
