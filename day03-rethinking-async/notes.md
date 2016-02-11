@@ -24,12 +24,22 @@ Speaker: Kyle Simpson [web](http://getify.me/)
 
 
 #### First Pattern to coordinate concurrency: CALLBACKS
-```
+
+```JavaScript
 setTimeout(function(){
     console.log('callback!');
     }, 1000);
 ```
-* There is a now and a later
+
+* There is a **now** and a **later**
+* We are identifying an entry point in the function where we can call back later in that function.
+* There is a gap in the function.
+* Callbacks == Continuations
+* We have callbacks because there is a **TIME DEPENDENCE**
+* Can lead to *Callback hell* when there are too many callbacks it becomes a mess.
+
+
+
 
 
 
