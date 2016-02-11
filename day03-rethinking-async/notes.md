@@ -109,11 +109,12 @@ Promise.race([
         setTiemout(function(){
             reject("Timeout!!");
             }, 3000);
-        })
-    ]).then(
-        success,
-        error
-    );
+    })
+])
+.then(
+    success,
+    error
+);
 
 ```
 
