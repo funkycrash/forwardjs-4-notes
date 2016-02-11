@@ -52,7 +52,8 @@ setTimeout(function(){
     * Sequential
     * Blocking
 
-#### Non fixes
+#### Thunks
+* A thunk is a function that doesn't need any time to 
 
 
 
