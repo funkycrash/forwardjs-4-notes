@@ -22,30 +22,36 @@ function output(text) {
 
 function getFile(file) {
 	fakeAjax(file,function(text){
-			var files=["file1", "file2", "file3"];
-			// loop through responses in order for rendering
-			for (var i=0; i<files.length; i++) {
-			// response received?
-			if (files[i] in responses) {
-				// response needs to be rendered?
-				if (responses[files[i]] !== true) {
-					output(responses[files[i]]);
-					responses[files[i]] = true;
-				}
-			}
-			// can't render yet
-			else {
-				// not complete!
-				return false;
-			}
-		}
+		receiveFiles(file, text);
 	});
 }
 
-function displayFile(file, text){
+function receiveFiles(file, text){
+	if (!responses[file]) {
+		responses[file] = text;
+	}
 
+	var files = ["file1", "file2", "file3"];
+		// loop through responses in order for rendering
+		for (var i=0; i<files.length; i++) {
+		// response received?
+		if (files[i] in responses) {
+			// response needs to be rendered?
+			if (responses[files[i]] !== true) {
+				output(responses[files[i]]);
+				responses[files[i]] = true;
+			}
+		}
+		// can't render yet
+		else {
+			// not complete!
+			return false;
+		}
+	}
+	console.log('complete');
 }
 
+var responses = {};
 
 // request all files at once in "parallel"
 getFile("file1");
