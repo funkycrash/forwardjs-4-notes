@@ -135,7 +135,7 @@ it.next(); //world
 
 ```
 
-* It's cooperative code. The inside of the function knows where to stop, and the outside code knows where to **resume.
+* It's cooperative code. The inside of the function knows where to **pause**, and the outside code knows where to **resume**.
 
 
 
