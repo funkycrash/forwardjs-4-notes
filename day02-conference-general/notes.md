@@ -195,6 +195,22 @@ There are more than 10 great JS Playgrounds out there. Which one should we choos
 * jsfiddle
 * plunker
 
+#### Why should we use JS Playground
+* They allow us to show prototyping very quickly
+* Want to save your PoC as starting point for development
+* No setup or configuration to get your IDE running
+
+#### What JS Playground are NOT
+* Very hard to retrieve data
+* They should not replace your IDE
+
+#### Which one are the best
+* Codepen 
+* Jsbin 
+* Jsfiddle 
+* plunkr
+
+
 
 
 
