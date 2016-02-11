@@ -54,6 +54,16 @@ setTimeout(function(){
 
 #### Thunks
 * A thunk is a function that doesn't need any time to 
+* The function becomes a value that has the state saved inside.
+* An Async thunk has everything it needs except the callback. Now thunk is a value and to retrieve the value I need to pass it the callback.
+* Async thunk Represents a **future value**.
+* I'm allowing that thunk to be a time-agnostic value. All the statement issues become more easy.
+
+
+
+
+
+
 
 
 
