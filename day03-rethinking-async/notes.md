@@ -82,14 +82,20 @@ setTimeout(function(){
 #### Map 
 `Map()` takes a list and runs an operation on each item and the result is a list where each item has been transformed.
 ```JavaScript
-[1,2,3,4,5].map(function mapper(x){
+[1,2,3,4,5].map(function doubleIt(x){
     return x * 2;
     });
 ```
 
 We get a **NEW array** in the same order than the original
 
-`reduce()` says we going to start with the initial state, and it deals with the type of value.
+`reduce()` says we going to start with the initial state, and it deals with the type of value. 
+```JavaScript
+[1,2,3,4,5].reduce(function sumIt(x,y){
+    return x + y;
+    },0); //15 
+```
+
 
 
 

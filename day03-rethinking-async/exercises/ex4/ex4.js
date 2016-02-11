@@ -26,6 +26,9 @@ function getFile(file) {
 	});
 }
 
+
+['']
+
 // Request all files at once in
 // "parallel" via `getFile(..)`.
 //
