@@ -59,6 +59,7 @@ setTimeout(function(){
 * Async thunk Represents a **future value**. It needs a **Callback**
 * I'm allowing that thunk to be a time-agnostic value. All the statement issues become more easy.
 
+#### Promises
 
 
 

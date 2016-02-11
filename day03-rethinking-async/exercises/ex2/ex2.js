@@ -20,16 +20,16 @@ function output(text) {
 // **************************************
 
 function getFile(file) {
-	var resp;
+	var resp, fn;
 
 	fakeAjax(file, function(text){
-		if (!resp) resp = text;
-		else resp(text);
+		if (fn) fn(text);
+		else resp = text;
 	});
 
 	return function thunk(cb){
 		if (resp) cb(resp);
-		else resp = cb;
+		else fn = cb;
 	};
 }
 
