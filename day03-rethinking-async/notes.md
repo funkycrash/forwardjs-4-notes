@@ -73,13 +73,23 @@ setTimeout(function(){
 #### Flow control with promises
 * You call `.then()` to chain the promises together and control the flow.
 * You can anly pass 1 value to the promise.
+* It returns `resolved` and `rejected`
 * If you need more values in one promise you need to pass them in an `Array` or `Object`
 * If you pass a function to a `.then()` whatever the function returns becomes a succesful promise resolution.
 * If an error happens in the `.then()` an exception is thrown and all other `.then()` will be ignored and the promise will be rejected.
 * `.catch(fn)` is the same thing than `then(null, fn)`
 
+#### Map 
+`Map()` takes a list and runs an operation on each item and the result is a list where each item has been transformed.
+```JavaScript
+[1,2,3,4,5].map(function mapper(x){
+    return x * 2;
+    });
+```
 
+We get a **NEW array** in the same order than the original
 
+`reduce()` says we going to start with the initial state, and it deals with the type of value.
 
 
 
