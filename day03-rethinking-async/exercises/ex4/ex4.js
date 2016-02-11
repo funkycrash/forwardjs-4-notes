@@ -29,9 +29,12 @@ function getFile(file) {
 
 ['file1','file2','file3']
 .map(getFile)
-.reduce(function(){
-	
-})
+.reduce(function chainPromises(chain, pr){
+	return chain.then( function(){
+		return pr;
+	})
+	.then(output);
+}, Promise.resolve());
 
 console.log('Complete!');
 
