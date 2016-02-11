@@ -101,7 +101,21 @@ We get a **NEW array** in the same order than the original
 #### Abstractions
 `Promise.all()` takes an array of Promises and will not be resolved until all the Promises are not resolved.
 
+`Promise.race()` takes all the Promoses and the first on that comes out is the one being accepted.
+```JavaScript
+Promise.race([
+    p,
+    new Promise(function(_, reject){
+        setTiemout(function(){
+            reject("Timeout!!");
+            }, 3000);
+        })
+    ]).then(
+        success,
+        error
+    );
 
+```
 
 
 
