@@ -20,7 +20,14 @@ function output(text) {
 // **************************************
 
 function getFile(file) {
-	// what do we do here?
+	var resp;
+
+	fakeAjax(file, function(text){
+		if (!resp) resp = text;
+		else resp(text);
+	});
+
+	
 }
 
 // request all files at once in "parallel"
