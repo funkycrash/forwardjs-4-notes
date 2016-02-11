@@ -119,8 +119,23 @@ Promise.race([
 
 
 #### Generators 
+* In JavaScript a function will always **run to completion**
+* Generators are going to give us a Function, that can run and part way through running can pause.
+* Using the `yield` keyword.
+```JavaScript
+function* gen(){
+    console.log("hello");
+    yield;
+    console.log("world");
+}
 
+var it = gen();
+it.next(); //hello
+it.next(); //world
 
+```
+
+* It's cooperative code. The inside of the function knows where to stop, and the outside code knows where to **resume.
 
 
 
