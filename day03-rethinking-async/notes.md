@@ -37,6 +37,8 @@ setTimeout(function(){
 * Callbacks == Continuations
 * We have callbacks because there is a **TIME DEPENDENCE**
 * Can lead to *Callback hell* when there are too many callbacks it becomes a mess.
+* **You have to manage the state of the callbacks over time**
+
 
 
 
