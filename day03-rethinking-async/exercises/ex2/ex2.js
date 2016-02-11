@@ -38,14 +38,13 @@ var thunk2 = getFile("file2");
 var thunk3 = getFile("file3");
 
 
-thunk1(function ready(text){
-	output(text);
-	thunk2(function ready(text) {
-		output(text);
-		thunk3(function ready(text) {
-			
-		})
+thunk1(function ready1(text1){
+	output(text1);
+	thunk2(function ready2(text2) {
+		output(text2);
+		thunk3(function ready3(text3) {
+			output(text3);
+			console.log("Complete!");
+		});
 	});
 });
-// request all files at once in "parallel"
-// ???
