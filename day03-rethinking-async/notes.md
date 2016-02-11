@@ -75,9 +75,8 @@ setTimeout(function(){
 * You can anly pass 1 value to the promise.
 * If you need more values in one promise you need to pass them in an `Array` or `Object`
 * If you pass a function to a `.then()` whatever the function returns becomes a succesful promise resolution.
-
-
-
+* If an error happens in the `.then()` an exception is thrown and all other `.then()` will be ignored and the promise will be rejected.
+* `.catch(fn)
 
 
 
