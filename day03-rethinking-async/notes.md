@@ -89,7 +89,6 @@ setTimeout(function(){
 
 We get a **NEW array** in the same order than the original
 
-
 #### Reduce
 `reduce()` says we going to start with the initial state, and it deals with the type of value. 
 ```JavaScript
@@ -118,6 +117,8 @@ Promise.race([
 
 ```
 
+
+#### Generators 
 
 
 
