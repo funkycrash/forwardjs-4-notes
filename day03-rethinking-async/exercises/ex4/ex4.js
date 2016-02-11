@@ -34,15 +34,7 @@ function getFile(file) {
 		return pr;
 	})
 	.then(output);
-}, Promise.resolve());
-
-console.log('Complete!');
-
-// Request all files at once in
-// "parallel" via `getFile(..)`.
-//
-// Render as each one finishes,
-// but only once previous rendering
-// is done.
-
-// ???
+}, Promise.resolve())
+.then(function(){
+	output("Complete!");
+});

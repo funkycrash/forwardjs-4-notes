@@ -89,6 +89,8 @@ setTimeout(function(){
 
 We get a **NEW array** in the same order than the original
 
+
+#### Reduce
 `reduce()` says we going to start with the initial state, and it deals with the type of value. 
 ```JavaScript
 [1,2,3,4,5].reduce(function sumIt(x,y){
@@ -96,6 +98,8 @@ We get a **NEW array** in the same order than the original
     },0); //15 
 ```
 
+#### Abstractions
+`Promise.all()` takes an array of Promises and will not be resolved until all the Promises are not resolved.
 
 
 
