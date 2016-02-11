@@ -45,6 +45,14 @@ setTimeout(function(){
     * not too late
     * not too  many times etc...
 
+* The most likely places to look for bugs: Asynchronous programming and global variables.
+* The brain works in a sequencial manner, we are able to respond to events though.
+* We need to have Sync-looking asynchronous code (JavaScript), because this is how our brain works.
+    * Syncrhonous
+    * Sequential
+    * Blocking
+
+#### Non fixes
 
 
 
