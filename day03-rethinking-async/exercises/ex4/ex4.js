@@ -27,7 +27,13 @@ function getFile(file) {
 }
 
 
-['']
+['file1','file2','file3']
+.map(getFile)
+.reduce(function(){
+	
+})
+
+console.log('Complete!');
 
 // Request all files at once in
 // "parallel" via `getFile(..)`.
