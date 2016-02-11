@@ -17,3 +17,26 @@ Speaker: Kyle Simpson [web](http://getify.me/)
 * JavaScript is single threaded.
 
 #### Concurrency 
+* How are the tasks managed ?
+* Micro level tasks are independent but macro level tasks are interleved.
+* It will feels like 
+* When there is a time dependency (waiting for a result before next step), then coordination becomes very complex.
+
+
+#### First Pattern to coordinate concurrency: CALLBACKS
+```
+setTimeout(function(){
+    console.log('callback!');
+    }, 1000);
+```
+* There is a now and a later
+
+
+
+
+
+
+
+
+
+
