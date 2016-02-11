@@ -74,8 +74,7 @@ setTimeout(function(){
 * You call `.then()` to chain the promises together and control the flow.
 * You can anly pass 1 value to the promise.
 * If you need more values in one promise you need to pass them in an `Array` or `Object`
-
-
+* If you pass a function to a `.then()` whatever the function returns becomes a succesful promise resolution.
 
 
 
