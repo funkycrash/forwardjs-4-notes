@@ -62,7 +62,14 @@ setTimeout(function(){
 #### Promises
 * A promise is a **future value**, very similar concept than the thunk
 * We can pass it around and reason about the promise in the same way we would have the value.
-* 
+* The promises were designed to give us back the trust
+    * only resolved once
+    * either success OR error
+    * messages passed/kept
+    * exceptions become errors
+    * immutable once resolved
+* Promises are mediator that operate in a way we can trust
+
 
 
 
