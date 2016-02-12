@@ -132,6 +132,9 @@ var expensesByName = d3.nest()
 
 
 
+First see what the data is important
+
+
 
 
 
