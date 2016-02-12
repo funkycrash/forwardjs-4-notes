@@ -88,14 +88,22 @@ var stringDate = format(new Date(2011, 0, 1)); // returns a string 2011-01-01
 
 ```
 
-
-
 #### Using SVGs
 * D3 allows us to create SVGs through generators `arc()`, `line()`, `symbol()`
 * We can also use the components passing them arrays of data.
 
+#### Loading external resources
+* `d3.json()` Creates a request for the JSON file at the specified url with the mime type "application/json". 
+    * If a callback is specified, the request is immediately issued with the GET method, and the callback will be invoked asynchronously when the file is loaded or the request fails; the callback is invoked with two arguments: the error, if any, and the parsed JSON.
+* `d3.csv()` Creates a request for the CSV file at the specified url with the mime type "text/csv"
 
+#### Working with arrays
+```JavaScript
+var expensesByName = d3.nest()
+  .key(function(d) { return d.name; })
+  .entries(expenses);
 
+```
 
 
 
