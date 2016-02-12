@@ -138,6 +138,11 @@ it.next(); //world
 * It's cooperative code. The inside of the function knows where to **pause**, and the outside code knows where to **resume**.
 * A generator doesn't have to finish if you don't want to finish it.
 * Generator + sequence task allows us to have synchronous looking asynchronous code.
+
+
+
+#### Concurrency with events
+* Promises are really good for discrete values
 * 
 
 
