@@ -19,4 +19,6 @@
 #### What is D3 using?
 * SVG
     * doesnt support HTML attributes or styles
-    * SVG is HTML but cannot be 
+    * SVG is HTML element but you can't put another HTML inside an SVG
+    * SVG size is **browser dependant**
+    * There is no `background-color` we use `fill` to put color inside
