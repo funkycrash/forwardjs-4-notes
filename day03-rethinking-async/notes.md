@@ -144,8 +144,10 @@ it.next(); //world
 * **Observable** is an interface that creates a new Promise each time a new value comes in
 * Libraries like [RXJS](http://rxjs.codeplex.com/) allow us to to this easily
 
-
-
+#### CSP - Commuicating Sequential Processes (AKA Go-style concurrency)
+* Models concurrency using Channels
+* Channel is a stream that can only have 1 piece of data in it.
+* 
 
 
 
