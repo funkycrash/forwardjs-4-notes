@@ -22,3 +22,9 @@
     * SVG is HTML element but you can't put another HTML inside an SVG
     * SVG size is **browser dependant**
     * There is no `background-color` we use `fill` to put color inside
+
+#### Selection
+* Selections are very much like `jQuery`
+* `var paragraphs = d3.select("div").selectAll("p");` 
+* D3 is working with the DOM and with Data points (you can change styles in the HTML through d3.js)
+* We usually have a selection and attach **data points** to it.
