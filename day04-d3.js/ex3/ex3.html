@@ -8,14 +8,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
+        <meta http-equiv="Refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="../js/d3.min.js" charset="utf-8"></script>
     </head>
-    <style type="text/css"></style>
+    <style type="text/css">
+    .chart div {
+        font: 10px sans-serif;
+        background-color: steelblue;
+        text-align: right;
+        padding: 3px;
+        margin: 1px;
+        color: white;
+      }
+    </style>
     <body>
+    <div class="chart"></div>
 
         <script type="text/javascript">
-            
         var width = window.innerWidth;
         var data = [3, 7, 21, 31, 35, 42];
         //Create an x linear scale with domain of 0 to data max and range of 0 to width
@@ -33,7 +43,7 @@
         .enter().append('div');
 
         //Use x scale to determine the width of the divs
-        newDivs.style("width", function(d) {
+        newDivs.style("width", 0).transition().style("width", function(d) {
           return xScale(d) + "px";
         });
 
@@ -44,9 +54,6 @@
         newDivs.text(function(d){
           return d;
         })
-
-
-
         </script>
     </body>
 </html>
