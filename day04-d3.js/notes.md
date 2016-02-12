@@ -46,3 +46,7 @@ Assuming that the body is initially empty, the above code will create six new DI
 <div>42</div>
 ```
 
+* Selection allow only to go down in the hierarchy
+* Always put your selection in a variable so you can go back up to that selection
+
+
