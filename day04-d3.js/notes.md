@@ -66,7 +66,8 @@ Assuming that the body is initially empty, the above code will create six new DI
     p.exit().remove();
 ```
 
-
+#### Scales
+`.domain` defines the "world" you're going to 
 
 
 
