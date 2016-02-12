@@ -76,7 +76,8 @@ console.log(xScale(500)); //100
 console.log(xScale.domain());//[0, 1000]
 ```
 
-
+* `.clamp(true)` will only allow the biggest value to be the max value of the `.range` we pass
+    * For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter t is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range.
 
 
 
