@@ -67,7 +67,14 @@ Assuming that the body is initially empty, the above code will create six new DI
 ```
 
 #### Scales
-`.domain` defines the "world" you're going to 
+* `.domain` defines the scope of your data (min and max)
+* `.range` defines the pixels to map to
+* Most of the functions are getters and setters
+```JavaScript
+console.log(xScale(500)); //100
+console.log(xScale.domain());//[0, 1000]
+```
+
 
 
 
