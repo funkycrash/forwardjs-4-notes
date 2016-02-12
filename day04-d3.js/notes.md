@@ -70,6 +70,7 @@ Assuming that the body is initially empty, the above code will create six new DI
 #### Scales
 * `.domain` defines the scope of your data (min and max)
 * `.range` defines the pixels to map to
+* `.extent` gives us the maximum and minimum value
 * Most of the functions are getters and setters
 ```JavaScript
 console.log(xScale(500)); //100
@@ -88,6 +89,10 @@ var stringDate = format(new Date(2011, 0, 1)); // returns a string 2011-01-01
 ```
 
 
+
+#### Using SVGs
+* D3 allows us to create SVGs through generators `arc()`, `line()`, `symbol()`
+* We can also use the components passing them arrays of data.
 
 
 
