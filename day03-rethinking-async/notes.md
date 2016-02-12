@@ -152,7 +152,9 @@ it.next(); //world
 
 
 ## Summary
-Each toolset / pattern is 
+Each toolset / pattern has a place for a certain application. They don't have to replace each other. The best thing to do is to analyze and see what is the best pattern for that particular application.
+Example of all patterns for the same app with a [TodoMVC](https://github.com/getify/a-tale-of-three-lists)
+
 
 
 
