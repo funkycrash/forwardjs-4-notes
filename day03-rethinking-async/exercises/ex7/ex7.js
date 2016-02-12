@@ -26,5 +26,13 @@ function getFile(file) {
 }
 
 ASQ()
-.runner(
-	)
+.runner(function *runFiles(){
+	var p1 = getFile("file1");
+	var p2 = getFile("file2");
+	var p3 = getFile("file3");
+
+	output(yield p1);
+	output(yield p2);
+	output(yield p3);
+	output("Complete!");
+});
