@@ -16,44 +16,41 @@
 
         <script type="text/javascript">
             
-var data = [10, 20, 30, 40];
-var divs = d3.select('body')
-  .selectAll('div')
-  .data(data);
-divs.enter()
-  .append('div');
-divs.on('click', function(d,i) {
-  d3.select(this)
-    .style('background-color','#42efef')
-    .style('padding','5px')
-    .text(d)
-})
-    .style({
-      width:'20px',
-      height:function(d) { return d + 'px' },
-      margin:'15px',
-      float:'left',
-      'background-color':'#25B0B0'
-    });
+          var data = [10, 20, 30, 40];
+          var divs = d3.select('body')
+            .selectAll('div')
+            .data(data);
+          divs.enter()
+            .append('div');
+          divs.on('click', function(d,i) {
+            d3.select(this)
+              .style('background-color','#42efef')
+              .style('padding','5px')
+              .text(d)
+          })
+              .style({
+                width:'20px',
+                height:function(d) { return d + 'px' },
+                margin:'15px',
+                float:'left',
+                'background-color':'#25B0B0'
+              });
 
-newData = [50, 100];
+          newData = [50, 100];
 
-var newDivs = d3.select('body')
-.selectAll('div')
-.data(newData);
+          var newDivs = d3.select('body')
+          .selectAll('div')
+          .data(newData);
 
-newDivs.enter().append('div');
-newDivs.exit().remove();
+          newDivs.enter().append('div');
+          newDivs.exit().remove();
 
-newDivs.style("height", "0")
-.transition()
-.duration(750)
-.style("height", function(data) {
-  return data + "px";
-});
-
-
-
+          newDivs.style("height", "0")
+          .transition()
+          .duration(750)
+          .style("height", function(data) {
+            return data + "px";
+          });
 
         </script>
     </body>

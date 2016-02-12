@@ -29,7 +29,7 @@
 * D3 is working with the DOM and with Data points (you can change styles in the HTML through d3.js)
 * We usually have a selection and attach **data points** to it
 * This allows us to insert the data in Functions and modify the HTML based on those data points
-* `enter()` Returns the enter selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection.
+
 ```JavaScript
 d3.select("body").selectAll("div")
     .data([4, 8, 15, 16, 23, 42])
@@ -49,7 +49,27 @@ Assuming that the body is initially empty, the above code will create six new DI
 * Selection allow only to go down in the hierarchy
 * Always put your selection in a variable so you can go back up to that selection
 
-#### Operating on Selection
+#### The Update Pattern
+* `enter()` Returns the enter selection: placeholder nodes for each data element for which no corresponding existing DOM element was found in the current selection.
+* `exit()` Returns the exit selection: existing DOM elements in the current selection for which no new data element was found.
+* This takes care of the case when we have an unknown amount of **DOM elements** for the corresponding **Data Points** or vice-versa.
+
+``` JavaScript
+// Update…
+    var p = d3.select("body").selectAll("p")
+    .data([3, 7, 21, 31, 35, 42]);
+
+    // Enter…
+    p.enter().append("p")
+
+    // Exit…
+    p.exit().remove();
+```
+
+
+
+
+
 
 
 
