@@ -147,7 +147,7 @@ it.next(); //world
 #### CSP - Commuicating Sequential Processes (AKA Go-style concurrency)
 * Models concurrency using Channels
 * Channel is a stream that can only have 1 piece of data in it.
-* 
+* Two Function will stop at some point to synchronize and pass a message, then continue and be autonomous.
 
 
 
