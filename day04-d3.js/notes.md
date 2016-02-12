@@ -79,6 +79,15 @@ console.log(xScale.domain());//[0, 1000]
 * `.clamp(true)` will only allow the biggest value to be the max value of the `.range` we pass
     * For example, with the default domain and range of [0,1], an input value of 2 will return an output value of 2. If clamping is enabled, the normalized domain parameter t is clamped to the range [0,1], such that the return value of the scale is always within the scale's output range.
 
+#### Time Formats
+```JavaScript
+var format = d3.time.format("%Y-%m-%d");
+var date = format.parse("2011-01-01"); // returns a Date Sat Jan 01 2011 00:00:00 GMT-0800 (PST)
+var stringDate = format(new Date(2011, 0, 1)); // returns a string 2011-01-01
+
+```
+
+
 
 
 
