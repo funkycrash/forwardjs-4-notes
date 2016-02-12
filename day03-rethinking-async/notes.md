@@ -10,7 +10,7 @@ Speaker: Kyle Simpson [web](http://getify.me/)
 * Event Reactive Programmation (observables)
 * CSP Communicating Sequenciatial Patterns
 
-### Parallel vs Async
+#### Parallel vs Async
 * Parallel threads are treated independently, even if they're share by the same core.
 * Parallelism is complex. In JavaScript only one function is runned at a given time.
 * In JavaScript there is the event loop running. (Each function coming in comes at the end of the loop). This is called **Asynchronous**.
@@ -148,7 +148,11 @@ it.next(); //world
 * Models concurrency using Channels
 * Channel is a stream that can only have 1 piece of data in it.
 * Two Function will stop at some point to synchronize and pass a message, then continue and be autonomous.
+* `cps.alts` is like race. I want the first response from any channel  (`take` or `put`...)
 
+
+## Summary
+Each toolset / pattern is 
 
 
 
