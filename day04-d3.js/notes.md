@@ -1,4 +1,5 @@
 # D3.JS - Data-driven documents
+D3.js is a JavaScript library that allows data to be represented graphically on a web page. 
 [Slides](http://yonet.github.io/d3-codeclass/#/)
 
 * Selections are where people get confused in d3
@@ -74,6 +75,15 @@ Assuming that the body is initially empty, the above code will create six new DI
 console.log(xScale(500)); //100
 console.log(xScale.domain());//[0, 1000]
 ```
+
+
+
+
+
+
+
+
+
 
 
 
