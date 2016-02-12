@@ -116,9 +116,19 @@ var expensesByName = d3.nest()
 #### Maps
 * TopoJSON is better than GeoJSON because it eliminates the overlapping lines. 80% smaller
 * https://github.com/mbostock/topojson
+* LeafletJS
+* Google Maps
+* Mapzen
 
-
-
+#### Drawing on a map
+* `queue()` to defer loading or wait until all resources 
+```
+<script src="http://d3js.org/queue.v1.min.js"></script>
+    queue()
+    .defer(d3.json, 'states.json')
+    .defer(d3.json, 'cities.json')
+    .await(makeMyMap);
+```
 
 
 
