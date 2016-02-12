@@ -139,11 +139,15 @@ it.next(); //world
 * A generator doesn't have to finish if you don't want to finish it.
 * Generator + sequence task allows us to have synchronous looking asynchronous code.
 
-
-
-#### Concurrency with events
+#### Observables
 * Promises are really good for discrete values
-* 
+* **Observable** is an interface that creates a new Promise each time a new value comes in
+* Libraries like [RXJS](http://rxjs.codeplex.com/) allow us to to this easily
+
+
+
+
+
 
 
 
