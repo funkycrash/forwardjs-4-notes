@@ -1,7 +1,11 @@
 import {Component} from 'angular2/core';
+import {Hero} from './hero';
+import {HeroDetailComponent} from './hero-detail.component';
+
 
 @Component({
     selector: 'my-app',
+    directives: [HeroDetailComponent],
     template: `
     <h1>{{title}}</h1>
     <h2>My Heroes</h2>
@@ -12,7 +16,7 @@ import {Component} from 'angular2/core';
 	  	<span class="badge">{{hero.id}}</span> {{hero.name}}
 	  </li>
 	</ul>
-
+  <my-hero-detail [hero]="selectedHero"></my-hero-detail>
 	`
 })
 
