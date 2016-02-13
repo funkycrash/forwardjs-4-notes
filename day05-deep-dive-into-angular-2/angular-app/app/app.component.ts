@@ -1,6 +1,8 @@
 import {Component} from 'angular2/core';
 import {Hero} from './hero';
 import {HeroDetailComponent} from './hero-detail.component';
+import {HeroService} from './hero.service';
+
 
 
 @Component({
@@ -22,6 +24,7 @@ import {HeroDetailComponent} from './hero-detail.component';
 
 
 export class AppComponent { 
+  constructor(private _heroService: HeroService) { }
 	public title = "Heroes Management App";
 	public heroes: Hero[];
   selectedHero: Hero;
