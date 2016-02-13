@@ -5,7 +5,7 @@ import {HeroDetailComponent} from './hero-detail.component';
 import {HeroService} from './hero.service';
 
 @Component({
-    selector: 'my-app',
+    selector: 'my-heroes',
     directives: [HeroDetailComponent],
     providers: [HeroService],
     template: `
@@ -23,7 +23,7 @@ import {HeroService} from './hero.service';
 })
 
 
-export class AppComponent implements OnInit { 
+export class HeroesComponent implements OnInit { 
   constructor(private _heroService: HeroService) { }
 	public title = "Heroes Management App";
 	public heroes: Hero[];
