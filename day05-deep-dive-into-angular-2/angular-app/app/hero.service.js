@@ -9,28 +9,24 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HeroDetailComponent;
+    var HeroService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HeroDetailComponent = (function () {
-                function HeroDetailComponent() {
+            HeroService = (function () {
+                function HeroService() {
                 }
-                HeroDetailComponent = __decorate([
-                    core_1.Component({
-                        selector: 'my-hero-detail',
-                        inputs: ['hero'],
-                        template: "\n\t<div *ngIf=\"hero\">\n    \t<h2>{{hero.name}} details!</h2>\n    \t<div><label>id: </label>{{hero.id}}</div>\n    \t<div><input [(ngModel)]=hero.name placeholder=\"name\"/></div>\n    </div>"
-                    }), 
+                HeroService = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], HeroDetailComponent);
-                return HeroDetailComponent;
+                ], HeroService);
+                return HeroService;
             })();
-            exports_1("HeroDetailComponent", HeroDetailComponent);
+            exports_1("HeroService", HeroService);
         }
     }
 });
-//# sourceMappingURL=hero-detail.component.js.map
+//# sourceMappingURL=hero.service.js.map
