@@ -43,8 +43,15 @@ var Greeter = (function () {
 
 
 #### Some new features for Angular 2
-
-
+* `()` are for events
+* `[]` are for attributes
+* `*` is for changing the dom
+* `ng-for` is for repeating (`ng-repeat` previously)
+* `ng-if` condition etc...
+* Data flows into a directive via property bindings.
+* Data flows out of a directive via event bindings.
+* You can use property and event bindings to implement two-way bindings.
+* Angular provides syntax sugar for two-way bindings, interpolation, and passing constants.
 
 
 
