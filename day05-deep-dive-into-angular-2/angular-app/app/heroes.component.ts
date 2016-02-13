@@ -2,12 +2,10 @@ import {Component} from 'angular2/core';
 import {OnInit} from 'angular2/core';
 import {Hero} from './hero';
 import {HeroDetailComponent} from './hero-detail.component';
-import {HeroService} from './hero.service';
 
 @Component({
     selector: 'my-heroes',
     directives: [HeroDetailComponent],
-    providers: [HeroService],
     template: `
     <h1>{{title}}</h1>
     <h2>My Heroes</h2>
