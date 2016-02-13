@@ -18,11 +18,13 @@ System.register(['angular2/core'], function(exports_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.title = "Heroes Management App";
+                    this.hero = "Windstorm";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>My First Angular 2 App</h1>\n    <input type=\"text\" placeholder=\"Project name\" [(ngmodel)]=\"project.name\">\n\t <ul>\n\t   <li>{{ project.name }}</li>\n\t</ul>\n\t"
+                        template: "\n    <h1>{{title}}</h1>\n    <h2>{{hero}} details!</h2>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
