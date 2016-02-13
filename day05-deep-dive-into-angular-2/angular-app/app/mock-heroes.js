@@ -3,7 +3,7 @@ System.register([], function(exports_1) {
     return {
         setters:[],
         execute: function() {
-            HEROES = [
+            exports_1("HEROES", HEROES = [
                 { "id": 11, "name": "Mr. Nice" },
                 { "id": 12, "name": "Narco" },
                 { "id": 13, "name": "Bombasto" },
@@ -14,7 +14,7 @@ System.register([], function(exports_1) {
                 { "id": 18, "name": "Dr IQ" },
                 { "id": 19, "name": "Magma" },
                 { "id": 20, "name": "Tornado" }
-            ];
+            ]);
         }
     }
 });
