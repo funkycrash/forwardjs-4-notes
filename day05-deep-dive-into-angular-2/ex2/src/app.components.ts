@@ -1,24 +1,15 @@
 import {Component} from 'angular2/core'
 
 @Component({
-  selector: 'my-form',
+  selector: 'my-app',
   template: `
-    <form [ngFormModel]="loginForm" (submit)="doLogin()">
-      <input ngControl="email" type="email" placeholder="Your email">
-      <input ngControl="password" type="password" placeholder="Your password">
-    <button type="submit">Log in</button>
-  </form>
+  <h1>Welcome to {{title}}</h1>
   `
 })
 
 
-export class LoginPage {
-  constructor(_builder:FormBuilder) {
-    this.signinForm = _builder.group({
-          login: ['', Validators.required],
-          password: ['', Validators.required]
-  });
-  doLogin(){
-    console.log('log in');
+export class AppComponent {
+  constructor() {
+    this.title = 'Angular App';  
   }
 }
