@@ -62,9 +62,7 @@ export function square(x) {
 import { square } from 'lib';
 ```
 
-
-
-
+* When we assign styles to a component they are scoped to that specific component. Our styles will only apply to our AppComponent and won't "leak" to the outer HTML.
 
 
 

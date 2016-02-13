@@ -28,7 +28,7 @@ System.register(['angular2/core'], function(exports_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n\t<ul class=\"heroes\">\n\t  <li *ngFor=\"#hero in heroes\">\n\t  \t<span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n\t  </li>\n\t</ul>\n    <h2>{{hero.name}} details!</h2>\n    <div><label>id: </label>{{hero.id}}</div>\n    <div><input [(ngModel)]=hero.name value={{hero.name}} placeholder={{hero.name}}/></div>\n\n\t"
+                        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n\t<ul class=\"heroes\">\n\t  <li *ngFor=\"#hero of heroes\">\n\t  \t<span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n\t  </li>\n\t</ul>\n    <h2>{{hero.name}} details!</h2>\n    <div><label>id: </label>{{hero.id}}</div>\n    <div><input [(ngModel)]=hero.name value={{hero.name}} placeholder={{hero.name}}/></div>\n\n\t",
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
