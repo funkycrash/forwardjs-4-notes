@@ -28,10 +28,15 @@ System.register(['angular2/core', './hero-detail.component', './hero.service'], 
                     this.title = "Heroes Management App";
                 }
                 AppComponent.prototype.onSelect = function (hero) { this.selectedHero = hero; };
+                AppComponent.prototype.getHeroes = function () {
+                    this.heroes =
+                    ;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
                         directives: [hero_detail_component_1.HeroDetailComponent],
+                        providers: [hero_service_1.HeroService],
                         template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n\t<ul class=\"heroes\">\n\t  <li *ngFor=\"#hero of heroes\" \n    (click)=\"onSelect(hero)\" \n    [class.selected]=\"hero === selectedHero\">\n\t  \t<span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n\t  </li>\n\t</ul>\n  <my-hero-detail [hero]=\"selectedHero\"></my-hero-detail>\n\t"
                     }), 
                     __metadata('design:paramtypes', [hero_service_1.HeroService])
