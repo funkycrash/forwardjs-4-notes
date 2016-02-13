@@ -12,11 +12,7 @@ import {Component} from 'angular2/core';
 	  	<span class="badge">{{hero.id}}</span> {{hero.name}}
 	  </li>
 	</ul>
-  <div *ngIf="selectedHero">
-    <h2>{{selectedHero.name}} details!</h2>
-    <div><label>id: </label>{{selectedHero.id}}</div>
-    <div><input [(ngModel)]=selectedHero.name placeholder="name"/></div>
-    </div>
+
 	`
 })
 
@@ -27,11 +23,6 @@ export class AppComponent {
   selectedHero: Hero;
   onSelect(hero: Hero) { this.selectedHero = hero; }
 
-}
-
-interface Hero {
-  id: number;
-  name: string;
 }
 
 
