@@ -9,11 +9,21 @@ import {Component} from 'angular2/core'
     <div>
       <h2>Hello {{name}}</h2>
       <button (click)="toggleMyName()">Toggle Name</button>
-      
+      <div class=".form"></div>
     </div>
   `,
   directives: []
 })
+
+@Component({
+  selector: 'my-form',
+  providers: [],
+  template: `
+
+  `,
+  directives: []
+})
+
 
 export class App {
   constructor() {
@@ -25,6 +35,19 @@ export class App {
     } else { 
       this.name = 'Nicolas'
     }
+  }
+}
+
+export class LoginPage {
+  constructor(fb: FormBuilder) {
+    this.loginForm = fb.group({
+      email: ["", Validators.required],
+      password: ["", Validators.required]
+    });
+  }
+  doLogin(event) {
+    console.log(this.loginForm.value);
+    event.preventDefault();
   }
 }
 
