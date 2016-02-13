@@ -134,9 +134,7 @@ var expensesByName = d3.nest()
 #### Workflow for making awesome viz
 1. Find a data set
 2. First see what in the data is important to show and display
-Then Clean the data for d3
-
-r2d3.us
+3. Then Clean the data for d3 (think about the d3 methods)
 
 
 
