@@ -52,6 +52,15 @@ var Greeter = (function () {
 * Data flows out of a directive via event bindings.
 * You can use property and event bindings to implement two-way bindings.
 * Angular provides syntax sugar for two-way bindings, interpolation, and passing constants.
+* Module syntax
+``` JavaScript
+//lib.js
+export function square(x) {
+ return x * x;
+}
+// main.js
+import { square } from 'lib';
+```
 
 
 
