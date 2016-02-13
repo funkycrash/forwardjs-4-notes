@@ -6,24 +6,24 @@ import {Component} from 'angular2/core';
     <h1>{{title}}</h1>
     <h2>My Heroes</h2>
 	<ul class="heroes">
-	  <li *ngFor="#hero of heroes ">
+	  <li *ngFor="#hero of heroes (click)="onSelect(hero)">
 	  	<span class="badge">{{hero.id}}</span> {{hero.name}}
 	  </li>
 	</ul>
-    <h2>{{hero.name}} details!</h2>
-    <div><label>id: </label>{{hero.id}}</div>
-    <div><input [(ngModel)]=hero.name value={{hero.name}} placeholder={{hero.name}}/></div>
+    <h2>{{selectedHero.name}} details!</h2>
+    <div><label>id: </label>{{selectedHero.id}}</div>
+    <div><input [(ngModel)]=selectedHero.name value={{selectedHero.name}} placeholder={{selectedHero.name}}/></div>
 
 	`,
 	
 })
 export class AppComponent { 
 	public title = "Heroes Management App";
-	public hero: Hero = {
-		id: 1, 
-		name: "Windstorm"
-	};
 	public heroes = HEROES;
+  selectedHero: Hero;
+  onSelect(hero: Hero) {
+    this.selectedHero = hero;
+  }
 }
 
 interface Hero {

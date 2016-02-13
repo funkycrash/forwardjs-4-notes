@@ -19,16 +19,15 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.title = "Heroes Management App";
-                    this.hero = {
-                        id: 1,
-                        name: "Windstorm"
-                    };
                     this.heroes = HEROES;
                 }
+                AppComponent.prototype.onSelect = function (hero) {
+                    this.selectedHero = hero;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n\t<ul class=\"heroes\">\n\t  <li *ngFor=\"#hero of heroes\">\n\t  \t<span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n\t  </li>\n\t</ul>\n    <h2>{{hero.name}} details!</h2>\n    <div><label>id: </label>{{hero.id}}</div>\n    <div><input [(ngModel)]=hero.name value={{hero.name}} placeholder={{hero.name}}/></div>\n\n\t",
+                        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n\t<ul class=\"heroes\">\n\t  <li *ngFor=\"#hero of heroes (click)=\"onSelect(hero)\">\n\t  \t<span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n\t  </li>\n\t</ul>\n    <h2>{{selectedHero.name}} details!</h2>\n    <div><label>id: </label>{{selectedHero.id}}</div>\n    <div><input [(ngModel)]=selectedHero.name value={{selectedHero.name}} placeholder={{selectedHero.name}}/></div>\n\n\t",
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
