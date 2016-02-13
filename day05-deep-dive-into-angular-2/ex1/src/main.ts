@@ -1,6 +1,6 @@
 //main entry point
 import {bootstrap} from 'angular2/platform/browser';
-import {App} from './app';
+import {LoginPage} from './app';
 
-bootstrap(App, [])
+bootstrap(LoginPage, [])
   .catch(err => console.error(err));
