@@ -12,24 +12,23 @@ import {Component} from 'angular2/core';
 	</ul>
     <h2>{{selectedHero.name}} details!</h2>
     <div><label>id: </label>{{selectedHero.id}}</div>
-    <div><input [(ngModel)]=selectedHero.name value={{selectedHero.name}} placeholder={{selectedHero.name}}/></div>
-
-	`,
-	
+    <div><input [(ngModel)]=selectedHero.name placeholder="name"/></div>
+	`
 })
+
+interface Hero {
+  id: number;
+  name: string;
+}
+
 export class AppComponent { 
 	public title = "Heroes Management App";
 	public heroes = HEROES;
   selectedHero: Hero;
-  onSelect(hero: Hero) {
-    this.selectedHero = hero;
-  }
+  onSelect(hero: Hero) { this.selectedHero = hero; }
+
 }
 
-interface Hero {
-	id: number;
-	name: string;
-}
 
 
 
