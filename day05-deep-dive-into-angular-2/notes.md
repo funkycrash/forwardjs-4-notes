@@ -41,3 +41,20 @@ var Greeter = (function () {
 })();
 ```
 
+
+#### Some new features for Angular 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
